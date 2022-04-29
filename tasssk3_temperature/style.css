@@ -1,0 +1,64 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Press Start 2P', cursive;
+}
+.container{
+    
+    z-index: -1;
+    width:100%;
+    height: 100vh;
+    background:url('https://media.istockphoto.com/photos/image-of-light-blue-ice-design-picture-id466513257?b=1&k=20&m=466513257&s=170667a&w=0&h=9pssfGpOQNZmd9ylYI2WaD7FgG86O7ueMVJUb7Nn4cA=');
+    
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: fade 1s ease-in;
+    
+}
+
+
+label{
+    color: rgb(14, 14, 14);
+}
+#home {
+    text-align: center;
+    padding: 120px;
+    font-size: 25px;
+}
+h1{
+    height: 10px;
+    padding: 30px;
+    color: rgb(0, 0, 0);
+    font-family:'Press Start 2P';
+    font-size: 50px;
+    
+}
+input{
+    border-radius: 2px;
+    border-color: rgb(249, 1, 1);  
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.button{
+    background-color: rgba(251, 10, 142, 0.823);
+    color: rgb(0, 0, 0);
+    height: 30px;
+    width: 350px;
+    border-style:inset;  
+    padding: 1px;
+    border-radius: 10px;
+    font-weight:bolder;
+    font-size: 15px;
+    
+
+}
+@keyframes fade {
+    from{
+transform: translateX(-100%);        
+    } to {
+        transform: translateX(0%);        
+    }
+}

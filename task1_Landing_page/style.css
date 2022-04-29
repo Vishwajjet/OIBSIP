@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --TEXT: 1.5rem;
+    --head:calc(1rem + 5vw)
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-section{
+    min-height: 100vh;
+    background: url('https://mindlab.hu/wp-content/uploads/2019/09/gaming-10.jpg');
+background-repeat: no-repeat;
+background-size: cover ;
+background-position: center ;
+animation: fade 1s ease-in;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0rem 1rem;
+    color: white;
+    transform: translateY(-100%); 
+    animation: movedown 850ms ease-out 1s forwards;
+
+}
+@keyframes movedown {
+    from{
+    transform: translateY(0%);  
+    }to {
+        transform: translateY(100%);  
+    }
+}
+.navbar ul{
+    list-style: none;
+
+}
+.navbar ul li{
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: var(--TEXT);
+   
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+border: 2px solid transparent;
+}
+.navbar ul li a:hover{
+    border: 2px solid White;
+}
+
+.hero-text{
+    color: white;
+    height: 90vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+@keyframes fade {
+    from{
+transform: translateX(-100%);        
+    } to {
+        transform: translateX(0%);        
+    }
+}
+.hero-text a {
+    text-decoration: none   ;
+    color: white;
+    background-color: rgb(218, 134, 8);
+font-weight: 900;
+font-size: var(--TEXT);
+padding: 0.8rem 1rem;
+margin: 0.8rem  auto;
+display:block;   
+
+}
+.hero-text a:hover{
+    opacity: 0.8;
+    transition: opacity 250ms linear;
+ 
+}
+.hero-text h2{
+    font-size: var(--head);
+}
+.hero-text p{
+    font-size: 3rem;
+}
